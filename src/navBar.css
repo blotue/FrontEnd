@@ -1,0 +1,30 @@
+#navBar{
+    background-color:#c299ff;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex!important;
+    justify-content: space-around;
+    flex-basis: auto;
+}
+
+#navBar a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navBar a:hover{
+    background-color: #8585ad;
+    color: yellow;
+    font: bold;
+}
+
+#navBar a.active{
+    background-color: black;
+    color: white;
+}
