@@ -49,14 +49,15 @@ export default function ActorSearch (){
                         return actor;
                     }
                     else if(actor.firstName.toLowerCase().includes(query.toLowerCase())){
-                        return actor;
+                        return actor;      
                     }
                     else if(actor.lastName.toLowerCase().includes(query.toLowerCase())){
                         return actor;
                     }
-                   /* else if(actor.actorId.id().includes(query.id())){
+                     else if(actor.actorId.toString().includes(query)){
                         return actor;
-                    }*/
+                    } 
+                  
                 }).map((actor, index) => (
                     <div id="actorBox" key={index}>
                     ID: {actor.actorId}<br></br>
